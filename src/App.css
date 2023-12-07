@@ -16,13 +16,22 @@ body{
   border: 1px solid #333;
   box-shadow: 0px 0px 15px gray;
 }
-.header,.footer{
+.header{
   width: 100%;
   display: flex;
   background-color: black;
   color:#fff;
   justify-content: center;
   align-items: center;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  background-color: black;
+  color:#fff;
+  height: 100px;
+  justify-content: center;
+  align-items:flex-start;
 }
 .content{
    width: 100%;
