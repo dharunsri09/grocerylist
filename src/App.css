@@ -1,38 +1,92 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 24px;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px gray;
+}
+.header,.footer{
+  width: 100%;
+  display: flex;
+  background-color: black;
+  color:#fff;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.content{
+   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: start;
+  align-items: center;
+  overflow-y: auto;
+
+} 
+.Listitems{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+}
+.Listiem{
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  background-color: darkgray;
+  justify-content: space-between;
+}
+.Listiem input{
+  width: 30px;
+  height: 30px;
+}
+.additems{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.additems input{
+  width: 70%;
+  margin-left: 10%;
+  height: 5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.additems button{
+  margin-left: 10px;
+  height: 5vh;
+  width: 10%;
+}
+.additems p{
+  font-size: 20px;
+}
+.additems button:hover{
+  background-color: black;
+  color: #fff;
+  
+}
+
+.searchitem{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.searchitem input{
+  width: 80%;
+  margin-left: 10%;
+  height: 5vh;
 }
